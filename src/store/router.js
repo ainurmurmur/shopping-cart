@@ -5,9 +5,13 @@ import Order from '../pages/order/order';
 import Result from '../pages/result/result';
 import Items from '../pages/items/items'
 import Item from '../pages/item/item'
+import MainPage from '../main/main';
+import { Route, Switch, Redirect } from 'react-router-dom';
+import Content from './../pages/cart/content/content';
 
 class Router{
-    routes = {
+    routes = {  
+        content:  ()=> <Content />,
         items: ()=> <Items />,
         item: () => <Item />,
         cart: () => <Cart/>,
@@ -15,7 +19,7 @@ class Router{
         result: () => <Result/>,
     }
 
-     activeRoute = 'items'
+     activeRoute = 'content'
 
      get component(){
         // проверка есть ли роут в списке, если нет -> p404

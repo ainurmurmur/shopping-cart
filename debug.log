@@ -1,1 +1,2 @@
 [1027/195157.221:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1028/015636.548:ERROR:file_io.cc(90)] ReadExactly: expected 36, observed 0

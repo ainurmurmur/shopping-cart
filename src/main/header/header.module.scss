@@ -1,0 +1,24 @@
+$background-main: #f0a3ad;
+$font-color: #ffffff;
+$common-font-size: 20px;
+$common-margin: 30px;
+
+
+.header{
+    display: grid;
+    grid-template-areas: 'logo navbar cart';
+    grid-template-columns: 25% 50% 25%;
+    height: 100px;
+    .__logo{
+        grid-area: 'logo';
+        background-image: url("../../img/logo.PNG") ;
+    }
+    .__navbar{
+        grid-area: 'navbar';
+    }
+    .__cart{
+        grid-area: 'cart';
+        margin: $common-margin;
+        font-size: $common-font-size;
+    }
+}

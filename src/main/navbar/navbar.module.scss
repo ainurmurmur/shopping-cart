@@ -1,0 +1,15 @@
+$common-font-size: 20px;
+$common-margin: 30px;
+
+.active{
+    color: black;
+}
+ul{
+    list-style: none;
+    display: inline-flex;
+}
+li{ 
+    font-size: $common-font-size;
+    margin: $common-margin;
+    cursor: pointer; 
+}
