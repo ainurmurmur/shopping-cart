@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import MinMax from './Lessons/hw1/minmax'
+// import InputMinMax from './Lessons/hw1/inputminmax'
+// import AppDerived from './Lessons/appDerived';
+// import AppLavrik from './Lessons/appLavrik';
+import App from './app/index'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function(){
+    return (
+        <div>
+            <App/>
+        </div>
+    );
 }
 
-export default App;
