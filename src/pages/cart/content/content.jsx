@@ -1,23 +1,32 @@
 import React from 'react';
-import {observer} from 'mobx-react';
-import {classes} from './content.module.scss';
+import { observer } from 'mobx-react';
+import classes from './content.module.scss';
+// //import {mainPhoto} from '../../../img/mainPhoto.PNG'
+// import mainPhoto from '../../../../public/donutsall.png'
+import router from '../../../store/router';
 
-
-const Content = observer (class Content extends React.Component{
-    render(){
+const Content = observer(class Content extends React.Component {
+    render() {
         return (
-           <div>
-               <div>
-                   Text
-                   <button>Заказать</button>
-               </div>
-               <div>
-                   photo
-               </div>
-           </div>
+            <div className={classes.content}>
+                <div className={classes.content__intro}>
+                    <h1>
+                        Свежие пончики из натуральных продуктов
+                    </h1>
+                    <h4>
+                        При покупке 2-х пончиков = кофе с собой в подарок
+                    </h4>
+                    <button className={classes.content__intro_btn} onClick={() => router.moveTo('items')}>
+                        Заказать
+                    </button>
+                </div>
+                <div className={classes.content__photo}>
+                    <img src='./donutsall.PNG' alt='main photo' />
+                </div>
+            </div>
         )
     }
-}) 
+})
 
 
 export default Content;

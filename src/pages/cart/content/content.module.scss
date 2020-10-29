@@ -1,0 +1,46 @@
+$background-main: #f1bbc1;
+$background-btn: #d53e6c;
+$font-color: #ffffff;
+$font-basic: cursive;
+$size: 10px;
+
+.content{
+    display: grid;
+    grid-template-areas: 'intro photo';
+    grid-template-columns: 65% 35%;
+    margin: 60px;
+    margin-left: 80px;
+
+    .content__intro{
+        padding-top: 60px;
+        grid-area: 'intro';
+
+        .content__intro_btn{
+            margin: $size*2;
+            padding: $size ;
+            padding-left: $size*6;
+            padding-right: $size*6;
+            background-color: $background-btn;
+            font-family: $font-basic;
+            color: $font-color;  
+            font-size: $size *3;
+            margin-left: $size *3;
+            border-radius: $size *5;   
+            border: rgb(250, 250, 250);
+        }
+
+        h1{
+            font-size: $size*6;
+            margin:  $size*3;
+        }
+        h1, h4 {
+                color: $font-color;
+                font-family: $font-basic;
+                margin:  $size*3;
+        }
+    }
+    .content__photo{
+        grid-area: 'photo';
+    }
+    
+}

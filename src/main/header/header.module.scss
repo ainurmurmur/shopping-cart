@@ -1,4 +1,4 @@
-$background-main: #f0a3ad;
+$background-main: #f1bbc1;
 $font-color: #ffffff;
 $common-font-size: 20px;
 $common-margin: 30px;
@@ -9,16 +9,29 @@ $common-margin: 30px;
     grid-template-areas: 'logo navbar cart';
     grid-template-columns: 25% 50% 25%;
     height: 100px;
-    .__logo{
+    position: fixed;
+    z-index: 15;
+    background-color: $background-main;
+    .header__logo{
         grid-area: 'logo';
-        background-image: url("../../img/logo.PNG") ;
+        width: auto;
+
+        .header__logo_size{
+            height: 100px;
+        }
     }
-    .__navbar{
+    .header__navbar{
         grid-area: 'navbar';
+        z-index: 10;
     }
-    .__cart{
+    .header__cart{
         grid-area: 'cart';
         margin: $common-margin;
         font-size: $common-font-size;
+    }
+    .header__cart_img{
+        margin-left: 15px;
+        height: 40px;
+        cursor: pointer;
     }
 }

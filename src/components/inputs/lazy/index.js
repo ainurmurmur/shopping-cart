@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default class extends React.Component{
+    
     static defaultProps = {
         onChange: function(e){},
         nativeProps: {}
@@ -48,6 +49,7 @@ export default class extends React.Component{
                    onBlur={this.checkChange}
                    onKeyUp={this.checkEnterKey}
                    ref={this.nativeInput}
+                   className={this.props.nativeProps.className}
             />
         );
     }

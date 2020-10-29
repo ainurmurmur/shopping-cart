@@ -16,6 +16,7 @@ const MainPage = observer (class MainPage extends React.Component{
                  {router.component}
               </div>
               <footer>
+                  Web-design: Alina Sebepova, https://www.behance.net/alinasebepova
               </footer>
 
             </div>

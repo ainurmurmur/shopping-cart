@@ -1,5 +1,5 @@
 $font-basic: cursive;
-$background-main: #f0a3ad;
+$background-main: #f1bbc1;
 $font-color: #ffffff;
 
 header{
@@ -9,5 +9,13 @@ header{
     color: $font-color;
 }
 .content{
-    height: auto;
+    min-height: 100%;
+    position: relative;
+}
+footer{
+    height: 50px;
+    font-family: $font-basic;
+    background-color: $background-main;
+    color: $font-color;
+    text-align: center;
 }
