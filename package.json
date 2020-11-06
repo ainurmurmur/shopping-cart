@@ -2,6 +2,7 @@
   "name": "lessons",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ainurmurmur.github.io/shopping-cart",
   "dependencies": {
     "@babel/plugin-proposal-decorators": "^7.10.5",
     "@testing-library/jest-dom": "^4.2.4",

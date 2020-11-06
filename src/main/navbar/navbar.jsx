@@ -1,12 +1,13 @@
 import React from 'react';
 import { observer } from 'mobx-react';
 import router from '../../store/router';
+import classes from './navbar.module.scss'
 
 const NavBar = observer(class NavBar extends React.Component {
     render() {
         return (
-            <div>
-                <ul>
+            <div className={classes.navbar}>
+                <ul >
                     <li onClick={() => router.moveTo('items')}>
                         Каталог
                     </li >
