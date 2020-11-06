@@ -4,6 +4,9 @@ import classes from './header.module.scss';
 import NavBar from './../navbar/navbar';
 import router from '../../store/router';
 import cartModel from '../../store/cart'
+import cartImg from '../../Images/cart.png'
+
+
 
 let  Header = () => {
 
@@ -19,7 +22,7 @@ let  Header = () => {
                 </div>
                 <div className={classes.header__cart}>
                     +7-(707)-777-77-77
-                    <img src='./cart.PNG' alt={'cart'} onClick={() => router.moveTo('cart')} className={classes.header__cart_img}/>
+                    <img src={cartImg} alt={'cart'} onClick={() => router.moveTo('cart')} className={classes.header__cart_img}/>
                    {cartModel.cart.length}
             </div>
             </div>

@@ -1,13 +1,14 @@
 import React from 'react';
 import { observer } from 'mobx-react';
 import classes from './other.module.scss';
+import donutsAbout from '../../Images/donuts1.PNG'
 
 const About = observer(class About extends React.Component {
     render() {
         return (
                 <div className={classes.content__about}>
                     <div className={classes.content__about_photo}>
-                        <img src='./donuts1.PNG' alt='donut'  className={classes.content__about_photo_size}/>
+                        <img src={donutsAbout} alt='donut'  className={classes.content__about_photo_size}/>
                     </div>
                     <div className={classes.content__about_text}>
                     <h3>
@@ -23,7 +24,7 @@ const About = observer(class About extends React.Component {
                     </p>
                     </div>
                     <div className={classes.content__about_photo}>
-                    <img src='./donuts1.PNG' alt='donut'  className={classes.content__about_photo_size}/>
+                    <img src={donutsAbout}  alt='donut'  className={classes.content__about_photo_size}/>
                     </div>
                 </div>
         )

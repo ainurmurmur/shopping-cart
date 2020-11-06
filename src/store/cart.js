@@ -62,7 +62,7 @@ function getProducts() {
     return {
         sweet: [
             {
-                src: './donut8.PNG',
+                src: './donut8.png',
                 id: 1,
                 title: 'Пончик в шоколаде',
                 price: 800,
@@ -78,7 +78,7 @@ function getProducts() {
                 current: 0
             },
             {
-                src: './donut5.PNG',
+                src: './donut5.png',
                 id: 3,
                 title: 'Малиновый пончик',
                 price: 600,
@@ -86,7 +86,7 @@ function getProducts() {
                 current: 0
             },
             {
-                src: './donut4.PNG',
+                src: './donut4.png',
                 id: 4,
                 title: 'Классический пончик',
                 price: 500,
@@ -102,7 +102,7 @@ function getProducts() {
                 current: 0
             },
             {
-                src: './donuts8.PNG',
+                src: './donuts8.png',
                 id: 6,
                 title: 'Пончик с шариками',
                 price: 900,
@@ -110,7 +110,7 @@ function getProducts() {
                 current: 0
             },
             {
-                src: './donuts13.PNG',
+                src: './donuts13.png',
                 id: 7,
                 title: 'Пончик с поливкой',
                 price: 700,
@@ -118,7 +118,7 @@ function getProducts() {
                 current: 0
             },
             {
-                src: './donuts4.PNG',
+                src: './donuts4.png',
                 id: 8,
                 title: 'Клубнично-банановый',
                 price: 800,
@@ -128,7 +128,7 @@ function getProducts() {
         ],
         withCreme: [
             {
-                src: './donuts9.PNG',
+                src: './donuts9.png',
                 id: 9,
                 title: 'Молочный шоколад',
                 price: 800,
@@ -136,7 +136,7 @@ function getProducts() {
                 current: 0
             },
             {
-                src: './donuts12.PNG',
+                src: './donuts12.png',
                 id: 10,
                 title: 'Горкий шоколад',
                 price: 500,
@@ -144,7 +144,7 @@ function getProducts() {
                 current: 0
             },
             {
-                src: './donuts10.PNG',
+                src: './donuts10.png',
                 id: 11,
                 title: 'Карамельный пончик',
                 price: 750,
@@ -152,7 +152,7 @@ function getProducts() {
                 current: 0
             },
             {
-                src: './donuts11.PNG',
+                src: './donuts11.png',
                 id: 12,
                 title: 'Ореховая сгущенка',
                 price: 700,
@@ -162,7 +162,7 @@ function getProducts() {
         ],
         notSweet: [
             {
-                src: './donuts0.PNG',
+                src: './donuts0.png',
                 id: 12,
                 title: 'Вкусно просто так',
                 price: 700,
@@ -170,14 +170,14 @@ function getProducts() {
                 current: 0
             },
             {
-                src: './donuts14.PNG',
+                src: './donuts14.png',
                 id: 13,
                 title: 'Несладкая сладость',
                 price: 450,
                 rest: 8,
                 current: 0
             }, {
-                src: './donut4.PNG',
+                src: './donut4.png',
                 id: 14,
                 title: 'Фруктовый джаз',
                 price: 600,
@@ -187,7 +187,7 @@ function getProducts() {
         ],
         coffee: [
             {
-                src: './coffee.PNG',
+                src: './coffee.png',
                 id: 15,
                 title: 'Эспрессо',
                 price: 600,
@@ -195,7 +195,7 @@ function getProducts() {
                 current: 0
             },
             {
-                src: './coffee5.PNG',
+                src: './coffee5.png',
                 id: 16,
                 title: 'Латте',
                 price: 700,
@@ -203,7 +203,7 @@ function getProducts() {
                 current: 0
             },
             {
-                src: './coffe4.PNG',
+                src: './coffe4.png',
                 id: 17,
                 title: 'Карамельный со льдом',
                 price: 1200,
@@ -211,7 +211,7 @@ function getProducts() {
                 current: 0
             },
             {
-                src: './coffee6.PNG',
+                src: './coffee6.png',
                 id: 18,
                 title: 'Крепкий со льдом',
                 price: 1100,
