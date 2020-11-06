@@ -1,9 +1,7 @@
 import React from 'react';
 import { observer } from 'mobx-react';
 import classes from './content.module.scss';
-// //import {mainPhoto} from '../../../img/mainPhoto.PNG'
-// import mainPhoto from '../../../../public/donutsall.png'
-import router from '../../../store/router';
+import router from '../../store/router';
 
 const Content = observer(class Content extends React.Component {
     render() {
@@ -21,7 +19,7 @@ const Content = observer(class Content extends React.Component {
                     </button>
                 </div>
                 <div className={classes.content__photo}>
-                    <img src='./donutsall.PNG' alt='main photo' />
+                    <img src='./donutsall.PNG' alt='mainphoto' />
                 </div>
             </div>
         )

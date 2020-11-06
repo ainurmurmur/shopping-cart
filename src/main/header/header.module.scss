@@ -15,6 +15,7 @@ $common-margin: 30px;
     .header__logo{
         grid-area: 'logo';
         width: auto;
+        cursor: pointer;
 
         .header__logo_size{
             height: 100px;

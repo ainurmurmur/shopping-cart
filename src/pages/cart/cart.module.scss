@@ -1,0 +1,84 @@
+$color1: #f1bbc1;
+$color2: #d53e6c;
+$color3: #ffffff;
+$color6: #fbe8ec;
+$color5: rgb(114, 27, 27);
+$colorDisabled: #d3a7ace0;
+$colorDisabledFont: #666666b2;
+$size: 20px;
+$font-p: system-ui;
+$font1: cursive;
+
+
+
+.cart{
+
+    width: 1000px;
+    margin-left: 300px;
+    margin-right: 400px;
+    text-align: center;
+ 
+
+    h2{
+        font-family: $font1;
+        color: $color3;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    h5{
+        font-family: $font1;
+        color: $color5;
+        text-align: center;
+        margin-top: 10px;
+    }
+    thead{
+        background-color: $color2;
+        color: $color3;
+        font-family: $font1;
+    }
+    tbody{
+        background-color: $color3;
+        color:$color2;
+        font-family: $font1;
+    }
+    .cart__btn_delete{
+        background-color: $color2;
+        color: $color3;
+        border-radius: 50%;
+        border: $color3;
+        box-shadow: $color5 1px 1px;
+    }
+    .cart__btn_delete:focus{
+        outline: none;
+        border: none;
+        border-color: white;
+    }
+    .cart__btn_order{
+        background-color: $color2;
+        color: $color3;
+        border: $color3;
+        font-family: $font1;
+        box-shadow: $color5 1px 1px;
+        margin-top: 10px;
+        text-align: center;
+        padding: 5px;
+        padding-left: $size;
+        padding-right: $size; 
+        font-size: $size -5;
+        border-radius: $size *5;   
+        border: rgb(250, 250, 250);
+        margin-bottom: 10px;
+    }
+    .cart__btn_order:disabled,
+    .cart__btn_order[disabled]{
+        border: 1px solid #999999;
+        background-color: $colorDisabled;
+        color: #666666b2;
+    }
+    .cart__btn_delete:focus{
+        outline: none;
+        border: none;
+        border-color: white;
+    }
+}

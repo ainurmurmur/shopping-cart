@@ -28,6 +28,7 @@ export default class extends React.Component{
     }
 
     set(newCnt){
+       
         let cnt = Math.min(Math.max(newCnt, this.props.min), this.props.max);
         this.props.onChange(cnt);
         return cnt;
@@ -45,14 +46,22 @@ export default class extends React.Component{
     render(){
         return (
             <div>
-                <button onClick={this.decrease} className={styles.component_btn}>-</button>
+                <button onClick={this.decrease} className={styles.component_btn}
+                 disabled={this.props.cnt ===this.props.min}
+                >
+                -
+                </button>
                 <AppLazyInput
                     nativeProps={{type: 'text', className: styles.component_input}}
                     value={this.props.cnt}
                     onChange={this.onChange}
                     ref={this.lazyInput}
                 />
-                <button onClick={this.increase} className={styles.component_btn}>+</button>
+                <button onClick= {this.increase} className={styles.component_btn} 
+                disabled={this.props.cnt ===this.props.max}
+                >
+                +
+                </button>
             </div>
         );
     }

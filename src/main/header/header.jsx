@@ -5,7 +5,6 @@ import NavBar from './../navbar/navbar';
 import router from '../../store/router';
 import cartModel from '../../store/cart'
 
-
 let  Header = () => {
 
     
@@ -13,7 +12,7 @@ let  Header = () => {
         return (
             <div className={classes.header}>
                 <div className={classes.header__logo}>
-                <img src='./logo.PNG' alt={'logo'} className={classes.header__logo_size}/>
+                <img src='./logo.PNG' alt={'logo'} className={classes.header__logo_size} onClick={() => router.moveTo('content')}/>
                 </div>
                 <div className={classes.header__navbar}>
                     <NavBar />
@@ -21,7 +20,7 @@ let  Header = () => {
                 <div className={classes.header__cart}>
                     +7-(707)-777-77-77
                     <img src='./cart.PNG' alt={'cart'} onClick={() => router.moveTo('cart')} className={classes.header__cart_img}/>
-                   {cartModel.totalCount}
+                   {cartModel.cart.length}
             </div>
             </div>
         )

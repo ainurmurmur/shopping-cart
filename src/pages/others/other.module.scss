@@ -1,0 +1,162 @@
+$background-main: #f1bbc1;
+$background-btn: #d53e6c;
+$font-color: #ffffff;
+$font-basic: cursive;
+$size: 10px;
+$font-p: system-ui;
+
+
+.content__about{
+    display: grid;
+    margin: 60px;
+    margin-left: 80px;
+    text-align: center;
+    grid-template-areas: 'photo text photo';
+    grid-template-columns: 30% 40% 30%;
+    margin: 60px;
+    margin-left: 80px;
+    
+    h3{
+        font-size: $size*4;
+        margin:  $size*3;
+        color: $background-btn;
+        font-family: cursive;
+        text-align: center;
+    }
+    h1, h4 {
+            color: $font-color;
+            font-family: $font-basic;
+            margin:  $size*3;
+    }
+    strong{
+        color:$background-btn
+    }
+    .content__about_text{
+        
+        grid-area: 'text';
+        width: 500px;
+        padding: 50px;
+        text-align: left;
+        background-image: url('../../wave.png') ;
+        border-radius: 10%;
+        box-shadow: 2px 0 3px 0px rgb(170, 64, 64);
+        margin-left: 50px;
+    }
+    .content__about_photo{
+
+        grid-area: 'photo';
+        padding: 20px;
+        text-align: left;
+        padding-top: 60px;
+
+      .content__about_photo_size{
+
+          width: 400px;
+          height: 400px;
+      }
+
+    }
+    .content__contacts{
+        padding-top: 60px;
+       
+    }
+}
+    .content{
+       margin-top: 50px;
+       background-color: white ;
+        padding: 50px;
+        width: 1000px;
+        border-radius: 20%;
+        margin-left: 20%;
+        margin-right: 15%;
+
+        box-shadow: $background-btn 1px 1px;
+        h3{
+            font-size: $size*4;
+            margin:  $size*3;
+            color: $background-btn;
+            font-family: cursive;
+            text-align: center;
+        }
+       h4{
+        font-size: $size*2;
+        margin:  $size;
+        color: black;
+        font-family: cursive;
+        text-align: center;
+       }
+        .content__whywe{
+            padding-top: 60px;
+            display: grid;
+            grid-template-areas: 'area1 area2 area3 area4';
+            grid-template-columns: 25% 25% 25%  25% ;
+          
+    
+            .content__whywe_area1{
+                grid-area: 'area1';
+                justify-self: center;
+            }
+            .content__whywe_area2{
+                grid-area: 'area2';
+                justify-self: center;
+            }
+            .content__whywe_area3{
+                grid-area: 'area3';
+                justify-self: center;
+            }
+            .content__whywe_area4{
+                grid-area: 'area4';
+                justify-self: center;
+            }
+    
+           
+        }
+    }
+
+.content__contacts{
+
+    margin-left: 15%;
+    margin-right: 15%;
+    h3{
+        font-size: $size*4;
+        margin:  $size*2;
+    }
+    h3, h4 {
+            color: $font-color;
+            font-family: $font-basic;
+            text-align: center;
+    }
+    .content__contacts_blocks{
+
+            padding-top: 60px;
+            display: grid;
+            grid-template-areas: '1 2 3 4';
+            grid-template-columns: 25% 25% 25%  25% ;
+          
+                p{
+                    font-size: $size +8;
+                    margin-top: 5px;
+                    font-family: $font-p;
+                    color:white;
+                    cursor: pointer;
+                }
+            
+    
+            .content__contacts_blocks_1{
+                grid-area: '1';
+                justify-self: center;
+            }
+            .content__contacts_blocks_2{
+                grid-area: '2';
+                justify-self: center;
+            }
+            .content__contacts_blocks_3{
+                grid-area: '3';
+                justify-self: center;
+            }
+            .content__contacts_blocks_4{
+                grid-area: '4';
+                justify-self: center;
+            }
+    }
+}

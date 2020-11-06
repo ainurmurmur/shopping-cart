@@ -7,19 +7,15 @@ class Order {
     state = {
         formData: {
             name: {
-                label: 'name',
+                label: 'Ваше имя',
                 value: ''
             },
             adress: {
-                label: 'adress',
+                label: 'Ваш адрес',
                 value: ''
             },
-            email: {
-                label: 'email',
-                value: ''
-            },
-            surname: {
-                label: 'surname',
+            phone: {
+                label: 'Ваш номер телефона',
                 value: ''
             },
         }
@@ -31,7 +27,7 @@ class Order {
     }
 
     hide() {
-        this.showModal = false
+        this.showModal = false;
     }
 
     confirm() {

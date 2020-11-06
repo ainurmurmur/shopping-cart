@@ -5,9 +5,10 @@ import Order from '../pages/order/order';
 import Result from '../pages/result/result';
 import Items from '../pages/items/items'
 import Item from '../pages/item/item'
-import MainPage from '../main/main';
-import { Route, Switch, Redirect } from 'react-router-dom';
-import Content from './../pages/cart/content/content';
+import Content from '../pages/content/content';
+import Contacts from '../pages/others/contacts';
+import WhyWe from '../pages/others/whywe';
+import About from '../pages/others/about';
 
 class Router{
     routes = {  
@@ -17,6 +18,9 @@ class Router{
         cart: () => <Cart/>,
         order: () => <Order/>,
         result: () => <Result/>,
+        about: () => <About/>,
+        whywe: () => <WhyWe/>,
+        contacts: () => <Contacts/>,
     }
 
      activeRoute = 'content'

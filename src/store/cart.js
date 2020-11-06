@@ -3,52 +3,59 @@ import { observable, computed, action, decorate } from 'mobx';
 
 
 
-let cnt;
-
- 
 
 class Cart {
-    products = getProducts()
-    
-    
-    get totalCount() {
-        
-    let totalSweetCnt = this.products.sweet.reduce((t, pr) => t + pr.current, 0);
-    let totalWithCremeCnt = this.products.withCreme.reduce((t, pr) => t + pr.current, 0);
-    let totalNotSweetCnt = this.products.notSweet.reduce((t, pr) => t +  pr.current, 0);
-    let totalCoffeeCnt = this.products.coffee.reduce((t, pr) => t +  pr.current, 0);
-    return totalSweetCnt + totalWithCremeCnt + totalNotSweetCnt + totalCoffeeCnt
-    }
+
+    cnt;
+    products = getProducts();
+    cart = getCart();
 
     get total() {
-        let totalSweet = this.products.sweet.reduce((t, pr) => t + pr.price * pr.current, 0);
-        let totalWithCreme = this.products.withCreme.reduce((t, pr) => t + pr.price * pr.current, 0);
-        let totalNotSweet = this.products.notSweet.reduce((t, pr) => t + pr.price * pr.current, 0);
-        let totalCoffee = this.products.coffee.reduce((t, pr) => t + pr.price * pr.current, 0);
-        return totalSweet + totalWithCreme + totalNotSweet + totalCoffee
-     }
-     
+        return this.cart.reduce((t, pr) => t + pr.price * pr.current, 0)
+    }
     change(i, cnt, type) {
         this.products[type][i].current = cnt;
-         
-     }
-    remove(i) {
-        this.products.splice(i, 1);
     }
-    add(i, type){
-        this.products[type][i].current = cnt;
+    changeInCart(i, cnt) {
+        this.cart[i].current = cnt;
+    }
+    remove(index) {
+        this.cart=this.cart.filter(el => el.id !== index)
+      
+        // this.cart.splice(i, 1);
+    }
+    add(i, type) {
+        if(!this.cart.includes(this.products[type][i])){
+            this.cart.push(this.products[type][i])
+        }
+        
+    }
+    reset() {
+        this.cart = [];
+        for(let key in this.products){
+            for(let i = 0; i<this.products[key].length; i++ ){
+                this.products[key][i].current = 0;
+            }
+        }
     }
 }
 decorate(Cart, {
     products: observable,
     total: computed,
     change: action,
-    remove: action,
-    totalCount: computed
+    remove: action, 
+    cart: observable,
+    typeOfItem: observable,
+    changeInCart: action,
+    reset: action
 });
 
 export default new Cart();
 
+
+function getCart() {
+    return []
+}
 
 
 function getProducts() {

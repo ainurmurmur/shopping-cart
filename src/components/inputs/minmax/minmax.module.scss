@@ -29,6 +29,13 @@ $font-p: system-ui;
     padding-left: 7px;
     padding-right: 7px; 
     border-color: $background-main;
-    border: rgb(216, 184, 184) solid 1px;
+    border:  #d53e6c solid 1px;
     margin-bottom: 3px;
+}
+.component_btn:disabled{
+    color: rgb(216, 184, 184) ;
+    border: rgb(216, 184, 184) solid 1px;
+}
+.component_btn:focus{
+    outline: none;
 }

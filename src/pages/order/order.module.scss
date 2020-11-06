@@ -1,0 +1,125 @@
+$color1: #f1bbc1;
+$color2: #d53e6c;
+$color3: #ffffff;
+$color6: #fbe8ec;
+$color5: rgb(114, 27, 27);
+$size: 20px;
+$font-p: system-ui;
+$font1: cursive;
+$colorDisabled: #d3a7ace0;
+$colorDisabledFont: #666666b2;
+
+.order{
+
+    margin-top: 20px;
+    width: 500px;
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: center;
+    background-color: $color3;
+    color:  $color2;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 20%;
+    background-image: url('../../donuts1back.png') ;;
+
+    h2{
+        font-family: $font1;
+        color: $color2;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    h5{
+        font-family: $font1;
+        color: $color5;
+        text-align: center;
+        margin-top: 10px;
+    }
+   
+    .order__input{
+        color: $color2;
+        font-family: $font-p;
+        border: solid 1px $color2;
+        border-radius: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 17px;
+        font-family: $font1;
+    }
+   
+    .order__input::placeholder { 
+        color:$color2;
+        opacity: 1; 
+        font-family: $font1;
+        font-size: 17px;
+      }
+      .order__modal{
+        color: $color2;
+        font-family: $font-p;
+        border: solid 1px $color2;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 17px;
+        font-family: $font1;
+    }
+    .order__btn_back{
+        background-color: $color6;
+        color: $color2;
+        border: $color3;
+        font-family: $font1;
+        box-shadow: $color5 1px 1px;
+        margin-top: 10px;
+        text-align: center;
+        padding: 10px;
+        padding-left: $size;
+        padding-right: $size; 
+        font-size: $size -5;
+        border-radius: $size *5;   
+        border: rgb(250, 250, 250);
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .order__btn_back:focus{
+        outline: none;
+        border: none;
+        border-color: white;
+    }
+    .order__btn_order:focus{
+        outline: none;
+        border: none;
+        border-color: white;
+    }
+    .order__btn_order{
+        background-color: $color2;
+        color: $color3;
+        border: $color3;
+        font-family: $font1;
+        box-shadow: $color5 1px 1px;
+        margin-top: 10px;
+        text-align: center;
+        padding: 10px;
+        padding-left: $size;
+        padding-right: $size; 
+        font-size: $size -5;
+        border-radius: $size *5;   
+        border: rgb(250, 250, 250);
+        margin-bottom: 10px;
+    }
+    .order__btn_order:disabled,
+    .order__btn_order[disabled]{
+        border: 1px solid #999999;
+        background-color: $colorDisabled;
+        color: $colorDisabledFont;
+    }
+}
